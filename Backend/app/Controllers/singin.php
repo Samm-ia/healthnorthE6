@@ -1,5 +1,5 @@
 <?php
-require_once 'templates/header.php';
+require_once 'Backend/templates/header.php';
 ?>
 
 <main class="form-signin m-auto" style="max-width:400px;">
@@ -48,5 +48,5 @@ require_once 'templates/header.php';
 
 
 <?php
-require_once 'templates/footer.php';
+require_once 'Backend/templates/footer.php';
 ?>

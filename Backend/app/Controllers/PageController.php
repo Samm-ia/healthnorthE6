@@ -6,15 +6,19 @@ class Controller{
 
     public function route(): void //va analyser l'url et en fonctions va afficher les controllers
     {
-        if (isset($_GET['controller']))
+        if (isset($_GET['action']))
         {
-            switch($_GET['controller']){
-                case'patient':
-                    var_dump('on affiche les patients');
+            switch($_GET['action']){
+                case'about':
+                    var_dump('on affiche les page about');
                     break;
                 case'rendez_vous':
                      var_dump('on affiche les rdv patients');
                     break;
+
+                case'homePage':
+                     var_dump('on affiche les rdv patients');
+                    break;    
                 default:
 
                 break;
@@ -22,7 +26,7 @@ class Controller{
         } else {
 
         }
+        
     }
 }
-
 ?>

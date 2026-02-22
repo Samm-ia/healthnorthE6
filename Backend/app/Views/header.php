@@ -13,12 +13,12 @@
     <header>
         <div class="px-3 py-2 text-bg-dark border-bottom">
             <div class="container">
-                <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start"> <a href="/" class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none"> <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap">
+                <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start"> <a href="?controller=home&action=index" class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none"> <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap">
                             <use xlink:href="#bootstrap"></use>
                         </svg> </a>
                     <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small">
-                        <li> <a href="#" class="nav-link text-secondary"> <svg class="bi d-block mx-auto mb-1" width="24" height="24" aria-hidden="true">
-                                    <use xlink:href="#home"></use>
+                        <li> <a href="?controller=home&action=index" class="nav-link text-secondary"> <svg class="bi d-block mx-auto mb-1" width="24" height="24" aria-hidden="true">
+                                    <use xlink:href=""></use>
                                 </svg>
                                 <font dir="auto" style="vertical-align: inherit;">
                                     <font dir="auto" style="vertical-align: inherit;">
@@ -26,7 +26,7 @@
                                     </font>
                                 </font>
                             </a> </li>
-                        <li> <a href="#" class="nav-link text-white"> <svg class="bi d-block mx-auto mb-1" width="24" height="24" aria-hidden="true">
+                        <li> <a href="?controller=rdv&action=index" class="nav-link text-white"> <svg class="bi d-block mx-auto mb-1" width="24" height="24" aria-hidden="true">
                                     <use xlink:href="#speedometer2"></use>
                                 </svg>
                                 <font dir="auto" style="vertical-align: inherit;">
@@ -35,7 +35,7 @@
                                     </font>
                                 </font>
                             </a> </li>
-                        <li> <a href="#" class="nav-link text-white"> <svg class="bi d-block mx-auto mb-1" width="24" height="24" aria-hidden="true">
+                        <li> <a href="?controller=rdv&action=dossier" class="nav-link text-white"> <svg class="bi d-block mx-auto mb-1" width="24" height="24" aria-hidden="true">
                                     <use xlink:href="#table"></use>
                                 </svg>
                                 <font dir="auto" style="vertical-align: inherit;">
@@ -44,7 +44,7 @@
                                     </font>
                                 </font>
                             </a> </li>
-                        <li> <a href="#" class="nav-link text-white"> <svg class="bi d-block mx-auto mb-1" width="24" height="24" aria-hidden="true">
+                        <li> <a href="?controller=rdv&action=mesOrdonnances" class="nav-link text-white"> <svg class="bi d-block mx-auto mb-1" width="24" height="24" aria-hidden="true">
                                     <use xlink:href="#grid"></use>
                                 </svg>
                                 <font dir="auto" style="vertical-align: inherit;">
@@ -71,11 +71,11 @@
                 <form class="col-12 col-lg-auto mb-2 mb-lg-0 me-lg-auto" role="search"> <input type="search" class="form-control" placeholder="Recherche..." aria-label="Recherche"> </form>
                 <div class="text-end"> <button type="button" class="btn btn-light text-dark me-2">
                         <font dir="auto" style="vertical-align: inherit;">
-                            <font dir="auto" style="vertical-align: inherit;">Se connecter</font>
+                            <a href="?controller=login&action=index" class="btn btn-primary"> Se connecter </a>
                         </font>
                     </button> <button type="button" class="btn btn-primary">
                         <font dir="auto" style="vertical-align: inherit;">
-                            <font dir="auto" style="vertical-align: inherit;">S'inscrire</font>
+                            <a href="?controller=signin&action=register" class="btn btn-primary"> S'inscrire </a>
                         </font>
                     </button> </div>
             </div>
