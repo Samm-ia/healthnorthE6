@@ -1,6 +1,5 @@
 <?php
 
-namespace App\Core;
 
 use PDO;
 use PDOException;
@@ -12,7 +11,7 @@ class Database {
     {
         if (self::$instance === null) {
             self::$instance = new PDO(
-                "mysql:host=localhost;dbname=healthnorth;charset=utf8",
+                "mysql:host=localhost;dbname=healthnorthE6;charset=utf8",
                 "root",
                 "root"
             );

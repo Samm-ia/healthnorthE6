@@ -1,6 +1,10 @@
 <?php
 session_start();
 
+require_once __DIR__ . '/Backend/app/Core/Database.php';
+require_once __DIR__ . '/Backend/app/Models/Model.php';
+require_once __DIR__ . '/Backend/app/Models/User.php';
+
 $controller = $_GET['controller'] ?? 'signin';
 $action = $_GET['action'] ?? 'index';
 

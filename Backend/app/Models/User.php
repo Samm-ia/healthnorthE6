@@ -1,5 +1,5 @@
 <?php
-namespace App\Models;
+
 
 use PDO;
 
@@ -35,6 +35,10 @@ class User extends Model {
     $stmt->execute([$email]);
     return $stmt->fetch(PDO::FETCH_ASSOC);
 }
+public function getLastInsertId() {
+    return $this->pdo->lastInsertId();
+}
+
 
 }
 

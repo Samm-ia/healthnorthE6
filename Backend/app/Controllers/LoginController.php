@@ -1,7 +1,5 @@
 <?php
 
-use App\Models\User;
-
 
 class LoginController {
 
@@ -37,11 +35,39 @@ class LoginController {
         echo "Mot de passe incorrect"; 
              return;
             }
-            $_SESSION['user'] = $user; 
+           $_SESSION['user'] = $user; 
             $_SESSION['user_id'] = $user['id'];
             $_SESSION['role'] = $user['role'];
+            $_SESSION['user']['role'] = $user['role'];
 
+            switch ($user['role']) {
+                case 'secretaire':
+                    header("Location: ?controller=secretaire&action=index");
+                    exit;
 
-            header("Location: ?controller=rdv&action=index"); exit;
+                case 'medecin':
+                    header("Location: ?controller=medecin&action=index");
+                    exit;
+
+                case 'patient':
+                    header("Location: ?controller=rdv&action=index");
+                    exit;
+
+                default:
+                    header("Location: ?controller=home&action=index");
+                    exit;
+            }
     }
+
+    public function logout() {
+    
+    if (session_status() === PHP_SESSION_NONE) {
+        session_start();
+    }
+
+    $_SESSION = array();
+    session_destroy();
+    header("Location: ?controller=login&action=index");
+    exit;
+}
 }

@@ -15,24 +15,24 @@
 
           <div class="row g-3">
 
-            <!-- DATE -->
+            
             <div class="col-sm-6">
               <label class="form-label">Date du rendez-vous</label>
               <input type="date" name="date_rdv" class="form-control" required>
             </div>
 
-            <!-- HEURE -->
+            
             <div class="col-sm-6">
               <label class="form-label">Heure</label>
               <input type="time" name="heure" class="form-control" required>
             </div>
 
-            <!-- MEDECIN -->
+          
             <div class="col-12">
               <label class="form-label">Médecin</label>
               <select name="id_medecin" class="form-select" required>
                 <?php foreach ($medecins as $m): ?>
-               <option value="<?= $m['id'] ?>">
+               <option value="<?= $m['id_medecin'] ?>">
               Dr <?= $m['nom'] . ' ' . $m['prenom'] ?>
               </option>
                 <?php endforeach; ?>
