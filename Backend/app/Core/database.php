@@ -10,9 +10,9 @@ class Database {
     {
         if (self::$instance === null) {
             self::$instance = new PDO(
-                "mysql:host=mysql-healthnorth.alwaysdata.net;dbname=healthnorth_bdd;charset=utf8",
-                "healthnorth",
-                "ilestminuit"
+                "mysql:host=" . DB_HOST . ";dbname=" . DB_NAME . ";charset=utf8",
+                DB_USER,
+                DB_PASS
             );
         }
 
