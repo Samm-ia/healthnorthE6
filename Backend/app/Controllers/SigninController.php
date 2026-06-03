@@ -2,7 +2,7 @@
 
 require_once __DIR__ . '/../Models/User.php';
 require_once __DIR__ . '/../Models/Medecins.php';
-require_once __DIR__ . '/../Models/Patients.php';
+require_once __DIR__ . '/../Models/patients.php';
 
 class SigninController {
 

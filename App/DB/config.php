@@ -1,10 +1,7 @@
 <?php
-// Informations de connexion à la base de données
-define('DB_HOST', 'localhost');
-define('DB_NAME', 'healthnorthE6');
-define('DB_USER', 'root');
-define('DB_PASS', 'root');
-
-define('BASE_URL', '/public/');
-
-?>
+$env = parse_ini_file(__DIR__ . '/.env');
+define('DB_HOST', $env['DB_HOST']);
+define('DB_NAME', $env['DB_NAME']);
+define('DB_USER', $env['DB_USER']);
+define('DB_PASS', $env['DB_PASS']);
+define('BASE_URL', '/healthnorthE6/public/');
