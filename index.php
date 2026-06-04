@@ -1,6 +1,7 @@
 <?php
 session_start();
 
+require_once __DIR__ . '/App/DB/config.php';
 require_once __DIR__ . '/Backend/app/Core/database.php';
 require_once __DIR__ . '/Backend/app/Models/Model.php';
 require_once __DIR__ . '/Backend/app/Models/User.php';
